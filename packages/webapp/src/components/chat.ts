@@ -108,7 +108,7 @@ export class ChatComponent extends LitElement {
 
     this.hasError = false;
     if (!isRetry) {
-      this.messages = [
+0      this.messages = [
         ...this.messages,
         {
           content: this.question,
@@ -338,32 +338,32 @@ export class ChatComponent extends LitElement {
       /* Base properties */
       --primary: var(--azc-primary, #07f);
       --error: var(--azc-error, #e30);
-      --text-color: var(--azc-text-color, #000);
-      --text-invert-color: var(--azc--text-invert-color, #fff);
+      --text-color: var(--azc-text-color, #fff);
+      --text-invert-color: var(--azc--text-invert-color, #000);
       --disabled-color: var(--azc-disabled-color, #ccc);
-      --bg: var(--azc-bg, #eee);
-      --card-bg: var(--azc-card-bg, #fff);
-      --card-shadow: var(--azc-card-shadow, 0 0.3px 0.9px rgba(0 0 0 / 12%), 0 1.6px 3.6px rgba(0 0 0 / 16%));
+      --bg: var(--azc-bg, #333);
+      --card-bg: var(--azc-card-bg, #444);
+      --card-shadow: var(--azc-card-shadow, 0 0.3px 0.9px rgba(255 255 255 / 12%), 0 1.6px 3.6px rgba(255 255 255 / 16%));
       --space-md: var(--azc-space-md, 12px);
       --space-xl: var(--azc-space-xl, calc(var(--space-md) * 2));
       --space-xs: var(--azc-space-xs, calc(var(--space-md) / 2));
       --space-xxs: var(--azc-space-xs, calc(var(--space-md) / 4));
       --border-radius: var(--azc-border-radius, 16px);
       --focus-outline: var(--azc-focus-outline, 2px solid);
-      --overlay-color: var(--azc-overlay-color, rgba(0 0 0 / 40%));
+      --overlay-color: var(--azc-overlay-color, rgba(255 255 255 / 40%));
 
       /* Component-specific properties */
       --error-color: var(--azc-error-color, var(--error));
       --error-border: var(--azc-error-border, none);
       --error-bg: var(--azc-error-bg, var(--card-bg));
       --retry-button-color: var(--azc-retry-button-color, var(--text-color));
-      --retry-button-bg: var(--azc-retry-button-bg, #f0f0f0);
-      --retry-button-bg-hover: var(--azc-retry-button-bg, #e5e5e5);
+      --retry-button-bg: var(--azc-retry-button-bg, #555);
+      --retry-button-bg-hover: var(--azc-retry-button-bg, #666);
       --retry-button-border: var(--azc-retry-button-border, none);
       --suggestion-color: var(--azc-suggestion-color, var(--text-color));
       --suggestion-border: var(--azc-suggestion-border, none);
       --suggestion-bg: var(--azc-suggestion-bg, var(--card-bg));
-      --suggestion-shadow: var(--azc-suggestion-shadow, 0 6px 16px -1.5px rgba(141 141 141 / 30%));
+      --suggestion-shadow: var(--azc-suggestion-shadow, 0 6px 16px -1.5px rgba(255 255 255 / 30%));
       --user-message-color: var(--azc-user-message-color, var(--text-invert-color));
       --user-message-border: var(--azc-user-message-border, none);
       --user-message-bg: var(--azc-user-message-bg, var(--primary));
@@ -382,7 +382,7 @@ export class ChatComponent extends LitElement {
       --submit-button-color: var(--azc-button-color, var(--primary));
       --submit-button-border: var(--azc-submit-button-border, none);
       --submit-button-bg: var(--azc-submit-button-bg, none);
-      --submit-button-bg-hover: var(--azc-submit-button-color, #f0f0f0);
+      --submit-button-bg-hover: var(--azc-submit-button-color, #555);
     }
     *:focus-visible {
       outline: var(--focus-outline) var(--primary);
@@ -574,7 +574,7 @@ export class ChatComponent extends LitElement {
       & button {
         flex: 0;
         padding: var(--space-md);
-        color: var(--retry-button-color);
+        color: var (--retry-button-color);
         background: var(--retry-button-bg);
         border: var(--retry-button-border);
 
